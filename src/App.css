@@ -1,0 +1,51 @@
+:root {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --accent-blue: #4a90e2;
+  --accent-purple: #9c27b0;
+  --accent-green: #4caf50;
+  --card-bg: #1e1e1e;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.main-content {
+  padding-top: 60px;
+}
+
+.search-bar {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: none;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  font-size: 16px;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+}
